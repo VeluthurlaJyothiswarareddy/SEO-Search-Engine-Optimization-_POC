@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     "https://searchengineoptimization-kappa.vercel.app"
   ),
 
+  verification: {
+    google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4",
+  },
+
   title: {
     default: "Learn Java Streams",
     template: "%s | Learn Java Streams",
@@ -50,13 +54,6 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <head>
-        <meta
-          name="google-site-verification"
-          content="bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4"
-        />
-      </head>
-
       <body>{children}</body>
     </html>
   );
