@@ -16,7 +16,7 @@ export const metadata: Metadata = {
    verification: {
     google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4"
   },
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://searchengineoptimization-kappa.vercel.app/"),
   title: {
     default: "Learn Java Streams",
     template: "%s | Learn Java Streams",
