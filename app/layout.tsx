@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Learn Java Streams",
     description:
       "Complete Java Streams tutorial with examples and interview questions.",
-    url: "https://searchengineoptimization-kappa.vercel.app",
+    url: "https://seosearchengineoptimizationpoc1.vercel.app/",
     siteName: "Learn Java Streams",
     type: "website",
   },
