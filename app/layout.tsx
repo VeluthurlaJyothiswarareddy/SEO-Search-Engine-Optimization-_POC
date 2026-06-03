@@ -13,15 +13,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-   verification: {
-    google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4"
+  metadataBase: new URL(
+    "https://searchengineoptimization-kappa.vercel.app"
+  ),
+
+  verification: {
+    google: "bqgWiwbOQUnFo7bIZW-vFDbG-hbbwEpKMzWqgFomwb4",
   },
-  metadataBase: new URL("https://searchengineoptimization-kappa.vercel.app/"),
+
   title: {
     default: "Learn Java Streams",
     template: "%s | Learn Java Streams",
   },
-  description: "Complete Java Streams tutorial with examples.",
+
+  description:
+    "Complete Java Streams tutorial with examples and interview questions.",
+
+  openGraph: {
+    title: "Learn Java Streams",
+    description:
+      "Complete Java Streams tutorial with examples and interview questions.",
+    url: "https://searchengineoptimization-kappa.vercel.app",
+    siteName: "Learn Java Streams",
+    locale: "en_US",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -32,9 +53,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
